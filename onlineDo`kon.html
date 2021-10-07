@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="uzb">
+
+<head>
+    
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    <meta name="viewport" content="height=device-height, initial-scale=1.0" />
+    
+    <meta name="description" content="Online do`kon" />
+    
+    <title>Online do`kon mobil ilovasi</title>
+      
+    <!--====== Style CSS ======-->
+    
+    <link rel="stylesheet" href="assets/css/style.css" />
+    
+    <!--setting favicon   -->
+    
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png" />
+
+    <link rel="stylesheet" href="assets/css/onlineDo`kon.css" />
+
+
+    <!--====== Font Awesome CSS ======-->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+
+    <!--====== Bootstrap CSS ======-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!-- heading animation css  -->
+    <link rel="stylesheet" href="assets/css/headingAnimation.css" />
+
+    <!-- fliping image css link -->
+    <link href="assets/css/flip-box.min.css" rel="stylesheet" />
+
+    <!-- plugin for testing flip image -->
+    <link rel="stylesheet" href="" />
+
+</head>
+
+<body>
+    <!--====== PRELOADER PART START ======-->
+    
+    
+    <div class="preloader">
+        <div class="loader">
+            <div class="ytp-spinner">
+                <div class="ytp-spinner-container">
+                    <div class="ytp-spinner-rotator">
+                        <div class="ytp-spinner-left">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                        <div class="ytp-spinner-right">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--====== PRELOADER PART ENDS ======-->
+
+    <!-- adding background image by bg class -->
+    <div class="bg">
+        <!-- Navbar -->
+        <nav class="nav">
+                <a href="index.html" class="home" style="color: red">
+                <img src="assets/images/shape/Group 69.svg" alt="Logo" />
+            </a>
+        </nav>
+        <!-- Heading part -->
+        <div class="Heading">
+            <h1 class="ex1">Online do`kon</h1>
+            <h1 class="ex2">mobil ilovasi</h1>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="./assets/js/textyle.js"></script>
+            <script>
+                $(window).on("load", function () {
+                    //simple use
+                    $(".ex1").textyle();
+                    $(".desc").textyle();
+                    //you can select options or add callback
+                    $(".ex2").textyle({
+                        duration: 600,
+                        delay: 200,
+                        easing: "swing",
+                        callback: function () {
+                            $(this).css({
+                                color: "coral",
+                                transition: "1s",
+                            });
+                            $(".desc").css("opacity", 1);
+                        },
+                    });
+                });
+            </script>
+        </div>
+        <!-- <img src="./assets/images/shape/onlineDokon.svg" alt="Online do`kon mobil ilovasi" class="dokon"> -->
+        <!-- Image part -->
+        <!-- <img src="./assets/images/shape/ananas.svg" alt="online do`kon" style="width: 150px;">
+        <img src="./assets/images/shape/Telefon.svg" alt="online do`kon" style="height: 300px;"> -->
+        <div style="display: flex" class="col-sm-5 col-12" style="position: relative">
+            <div class="bod-flip-box">
+                <div class="flip-inner">
+                    <div class="flip-front">
+                        <img src="./assets/images/3.jpg" alt="Online do`kon" />
+                    </div>
+                    <div class="flip-back" style="background-color: #42f5a4">
+                        <div class="wrapper" style="position: absolute; top: 50%">
+                            <a href="https://play.google.com/store/apps/details?id=uz.invan.buzzle"
+                                class="fancybtn"><span>Yuklab olish!</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Button part -->
+        <div class="wrapper">
+            <a href="https://play.google.com/store/apps/details?id=uz.invan.buzzle" class="fancybtn"><span>Yuklab
+                    olish!</span></a>
+        </div>
+    </div>
+
+    <!--====== Plugins js ======-->
+    <script src="assets/js/plugins.js"></script>
+
+    <!-- preloader js -->
+    <script src="./preloaderForPortfolio.js"></script>
+   
+    <!-- Path to plugin of flipbox -->
+    <script src="assets/js/flip-box.js"></script>
+
+</body>
+
+</html>

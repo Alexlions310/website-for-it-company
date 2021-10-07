@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="uzb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Yetkazib berish mobil ilovasi android ilova bo`lib bu ilovada oziq ovqat mahsulotlari yetkazib beriladi"
+    />
+
+    <title>Yetkazib berish mobil ilovasi</title>
+
+    <!-- link to favicon  -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.png"
+      type="image/png"
+    />
+
+    <!--====== Style CSS ======-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!--====== Bootstrap CSS ======-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="assets/css/yetkazibBerish.css" />
+  </head>
+
+  <body>
+    <!--====== PRELOADER PART START ======-->
+
+    <div class="preloader">
+      <div class="loader">
+        <div class="ytp-spinner">
+          <div class="ytp-spinner-container">
+            <div class="ytp-spinner-rotator">
+              <div class="ytp-spinner-left">
+                <div class="ytp-spinner-circle"></div>
+              </div>
+              <div class="ytp-spinner-right">
+                <div class="ytp-spinner-circle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--====== PRELOADER PART ENDS ======-->
+
+    <!-- adding background image by bg class -->
+    <div class="dostavka">
+      <!-- Navbar -->
+      <nav class="nav">
+        <a href="index.html" class="home" style="color: red">
+            <img src="assets/images/shape/Group 69.svg" alt="Logo" />
+        </a>
+      </nav>
+      <!-- Heading part and button part-->
+      <div class="row">
+        <div class="Heading col-lg-6 col-md-6 col-sm-6 col-12">
+          <h1 class="ex1">Yetkazib berish</h1>
+          <h1 class="ex2">mobil ilovasi</h1>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+          <script src="./assets/js/textyle.js"></script>
+          <script>
+            $(window).on("load", function () {
+              //simple use
+              $(".ex1").textyle();
+              $(".desc").textyle();
+              //you can select options or add callback
+              $(".ex2").textyle({
+                duration: 600,
+                delay: 200,
+                easing: "swing",
+                callback: function () {
+                  $(this).css({
+                    color: "coral",
+                    transition: "1s",
+                  });
+                  $(".desc").css("opacity", 1);
+                },
+              });
+            });
+          </script>
+          <!-- Button part -->
+          <div class="wrapper">
+            <a href="https://iphone.apkpure.com/emu-express/uz.invan.emu-uz" class="fancybtn"><span>Yuklab olish!</span></a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-6 hamburger">
+          <img src="assets/images/shape/hamburger.svg" alt="Gamburger" />
+        </div>
+        <div
+          class="col-lg-3 col-md-3 col-sm-3 col-6 mobileImage"
+          style="padding-top: 50px"
+        >
+          <img
+            src="assets/images/shape/taxiapp.svg"
+            alt="Yetkazib berish ilovasi"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!--====== Plugins js ======-->
+    <script src="assets/js/plugins.js"></script>
+
+    <!--====== Preloader js ======-->
+    <script src="./preloaderForPortfolio.js"></script>
+  </body>
+</html>

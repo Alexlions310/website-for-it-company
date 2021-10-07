@@ -1,0 +1,75 @@
+body, html {
+    height: 100%;
+}
+  
+  .bg {
+    /* The image used */
+    background-image: url("../images/shape/bckgnd.svg"); 
+    /* Full height */
+    height: 100%; 
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.nav{
+
+  font-size: 28px;
+  margin-left: 10px;
+
+}
+
+.home{
+  margin-left: 10px;
+  margin-top: 5px;
+}
+/* styling button */
+.wrapper{
+  position: fixed;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fancybtn{
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #333;
+  border: 2px solid #333;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+}
+
+.fancybtn span{
+  position: relative;
+  z-index: 2;
+}
+
+.fancybtn:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #51B268;
+  transition: all .35s;
+}
+
+.fancybtn:hover{
+  color: #fff;
+}
+
+.fancybtn:hover:after{
+  width: 100%;
+}
+body{
+  padding-bottom: 0px;
+}
